@@ -24,9 +24,10 @@ const weather = [
 
 weather.forEach((item) => {
   const element = document.createElement('mon-composant')
-  element.hour = item.hour
-  element.description = item.description
-  element.degrees = item.degrees
+  element.setAttribute('hour', item.hour)
+  element.setAttribute('description', item.description)
+  element.setAttribute('degrees', item.degrees)
+  element.setAttribute('class', 'red')
 
   weatherContainer.appendChild(element)
 })

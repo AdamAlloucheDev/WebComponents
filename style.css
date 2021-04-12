@@ -7,3 +7,7 @@ mon-composant {
   margin: 0 10px;
   text-align: center;
 }
+
+.red {
+  color: red;
+}
