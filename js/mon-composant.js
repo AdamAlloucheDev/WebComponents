@@ -1,11 +1,9 @@
-class MonComposant extends HTMLElement {
+export default class MonComposant extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<div>
-      <h2>10H00</h2>
-      <p class="description">Ensoleillé</p>
-      <p class="degrees">10 °C</p>
+      <h2>${this.getAttribute('hour')}</h2>
+      <p class="description">${this.getAttribute('description')}</p>
+      <p class="degrees">${this.getAttribute('degrees')}</p>
     </div>`
   }
 }
-
-customElements.define('mon-composant', MonComposant)

@@ -1,7 +1,7 @@
 .flex {
   display: flex;
 }
-.flex > div {
+mon-composant {
   flex: 1;
   border: solid;
   margin: 0 10px;
