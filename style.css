@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+}
+.flex > div {
+  flex: 1;
+  border: solid;
+  margin: 0 10px;
+  text-align: center;
+}
